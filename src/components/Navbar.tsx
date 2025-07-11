@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Wallet, Menu, Settings } from 'lucide-react';
+import { Settings, Menu } from 'lucide-react';
+import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 
 export const Navbar = () => {
   return (
@@ -29,10 +30,12 @@ export const Navbar = () => {
         <Button variant="outline" size="sm">
           <Settings className="w-4 h-4" />
         </Button>
-        <Button variant="glow">
-          <Wallet className="w-4 h-4" />
-          Connect Wallet
-        </Button>
+        
+        {/* Solana Wallet Connection Button */}
+        <div className="wallet-adapter-button-container">
+          <WalletMultiButton className="wallet-adapter-button-trigger" />
+        </div>
+        
         <Button variant="ghost" size="icon" className="md:hidden">
           <Menu className="w-4 h-4" />
         </Button>

@@ -124,4 +124,54 @@
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
+
+  /* Wallet Adapter Styles */
+  .wallet-adapter-button-trigger {
+    background: var(--gradient-primary) !important;
+    border: none !important;
+    border-radius: 0.75rem !important;
+    color: hsl(var(--primary-foreground)) !important;
+    font-weight: 500 !important;
+    transition: all 0.2s !important;
+    box-shadow: var(--shadow-primary) !important;
+  }
+
+  .wallet-adapter-button-trigger:hover {
+    transform: scale(1.05) !important;
+    box-shadow: var(--glow-primary) !important;
+  }
+
+  .wallet-adapter-modal-wrapper {
+    background: hsl(var(--background)) !important;
+    border: 1px solid hsl(var(--border)) !important;
+    border-radius: 0.75rem !important;
+  }
+
+  .wallet-adapter-modal-title {
+    color: hsl(var(--foreground)) !important;
+  }
+
+  .wallet-adapter-modal-button-close {
+    color: hsl(var(--muted-foreground)) !important;
+  }
+
+  .wallet-adapter-modal-list {
+    margin: 0 !important;
+  }
+
+  .wallet-adapter-modal-list li {
+    background: hsl(var(--card)) !important;
+    border: 1px solid hsl(var(--border)) !important;
+    border-radius: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .wallet-adapter-modal-list li:hover {
+    background: hsl(var(--accent)) !important;
+  }
+
+  .wallet-adapter-modal-list .wallet-adapter-button {
+    color: hsl(var(--foreground)) !important;
+    font-weight: 500 !important;
+  }
 }
